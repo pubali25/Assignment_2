@@ -1,0 +1,33 @@
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{##}
+{##}
+{#{% block content %}#}
+{#    {% if form.errors %}#}
+{#    <br />#}
+{#    <p>Your username and password didn't match. Please try again.</p>#}
+{#    {% endif %}#}
+{#    <br />#}
+{#    <br />#}
+{#    <form method="post" action="{% url 'login' %}">#}
+{#         {{ form.as_p }}#}
+{#        {% csrf_token %}#}
+{##}
+{##}
+{#        <input type="submit" value="login"/>#}
+{#        <input type="hidden" name="next" value="{{ next }}"/>#}
+{#    </form>#}
+{#{% endblock %}#}
+
+<!doctype html>
+<html lang="en">
+{% extends 'crm/base.html' %} {% block title %}Log In{% endblock title %} {% block content %}
+<h2>Log In</h2>
+<form method="post">
+    {% csrf_token %} {{ form.as_p }}
+    <button class="btn btn-success ml-2" type="submit">Log In</button>
+    <a href="{% url 'crm:password-reset' %}"> Forgot Password? </a>
+</form>
+{% endblock content %}
+
+</html>
