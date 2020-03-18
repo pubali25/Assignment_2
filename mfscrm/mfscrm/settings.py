@@ -39,7 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     #'crm',
-    #'mathfilters',
+    'mathfilters',
     'crm.apps.CrmConfig',
     #'crispy_forms',
     #'import_export',
@@ -120,7 +120,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-IMPORT_EXPORT_USE_TRANSACTIONS = True
+#IMPORT_EXPORT_USE_TRANSACTIONS = True
 
 
 # Static files (CSS, JavaScript, Images)
