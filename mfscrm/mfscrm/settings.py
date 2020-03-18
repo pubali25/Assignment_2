@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     #'crm',
     #'mathfilters',
     'crm.apps.CrmConfig',
-    'crispy_forms',
-    'import_export',
+    #'crispy_forms',
+    #'import_export',
 ]
 
 MIDDLEWARE = [
