@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.humanize',
     #'crm',
-    #'mathfilters',
+    'mathfilters',
     'crm.apps.CrmConfig',
     #'crispy_forms',
-    #'import_export',
+    'import_export',
 ]
 
 MIDDLEWARE = [
